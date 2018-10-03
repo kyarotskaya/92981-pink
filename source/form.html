@@ -13,16 +13,16 @@
       <button class="main-nav__toggle">Close menu</button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a href="">Главная</a>
+          <a href="index.html" class="main-nav__link">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a href="">Фотографии</a>
+          <a href="photo.html" class="main-nav__link">Фотографии</a>
         </li>
         <li class="main-nav__item">
-          <a href="">Конкурс</a>
+          <a href="form.html" class="main-nav__link">Конкурс</a>
         </li>
         <li class="main-nav__item">
-          <a href="">HTML Academy</a>
+          <a href="htmlacademy.ru" class="main-nav__link">HTML Academy</a>
         </li>
       </ul>
     </nav>
@@ -35,83 +35,93 @@
         приз - 1000 миль на вашу бонусную карту!
       </p>
       <form action="https://echo.htmlacademy.ru" class="form" method="POST" target="_blank" enctype="application/x-www-form-urlencoded">
-        <fieldset>
-          <div class="form__text-field">
-            <label for="lastName">Фамилия</label>
-            <input type="text" id="lastName" name="lastName" placeholder="Укажите фамилию *">
-          </div>
-          <div class="form__text-field">
-            <label for="firstName">Имя</label>
-            <input type="text" id="firstName" name="firstName" placeholder="Введите имя *">
-          </div>
-          <div class="form__text-field">
-            <label for="secondName">Отчество</label>
-            <input type="text" id="secondName" name="secondName" placeholder="Ну и отчество тоже">
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>
-            Ваши безбашенные достижения в путешествии
-          </legend>
-          <div class="form__checkbox">
-            <input type="checkbox" name="feature" id="selfie" value="Сделал селфи с акулой">
-            <label for="selfie">Сделал селфи с акулой</label>
-          </div>
-          <div class="form__checkbox">
-            <input type="checkbox" name="feature" id="sunburn" value="Обгорел на пляже">
-            <label for="sunburn">Обгорел на пляже</label>
-          </div>
-          <div class="form__checkbox">
-            <input type="checkbox" name="feature" id="star" value="Видел Чака Норриса">
-            <label for="star">Видел Чака Норриса</label>
-          </div>
-          <div class="form__checkbox">
-            <input type="checkbox" name="feature" id="shopping" value="Накупил сувениров">
-            <label for="shopping">Накупил сувениров</label>
-          </div>
-          <div class="form__checkbox">
-            <input type="checkbox" name="feature" id="tower" value="Удержал башню">
-            <label for="tower">Удержал башню</label>
-          </div>
-          <div class="form__checkbox">
-            <input type="checkbox" name="feature" id="hotel" value="Разгромил отель">
-            <label for="hotel">Разгромил отель</label>
+        <fieldset class="form__fieldset">
+          <div class="form__fieldset-wrapper">
+            <div class="form__text-field">
+              <label for="lastName">Фамилия</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Укажите фамилию *">
+            </div>
+            <div class="form__text-field">
+              <label for="firstName">Имя</label>
+              <input type="text" id="firstName" name="firstName" placeholder="Введите имя *">
+            </div>
+            <div class="form__text-field">
+              <label for="secondName">Отчество</label>
+              <input type="text" id="secondName" name="secondName" placeholder="Ну и отчество тоже">
+            </div>
           </div>
         </fieldset>
-        <fieldset>
-          <div class="form__text-field">
-            <label for="phone">Номер телефона</label>
-            <input type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
-          </div>
-          <div class="form__text-field">
-            <label for="firstName">Адрес почты</label>
-            <input type="email" id="email" name="email" placeholder="Введите почту *">
+        <fieldset class="form__fieldset">
+          <div class="form__fieldset-wrapper">
+            <legend>
+              Ваши безбашенные достижения в путешествии
+            </legend>
+            <div class="form__checkbox">
+              <input type="checkbox" name="feature" id="selfie" value="Сделал селфи с акулой">
+              <label for="selfie">Сделал селфи с акулой</label>
+            </div>
+            <div class="form__checkbox">
+              <input type="checkbox" name="feature" id="sunburn" value="Обгорел на пляже">
+              <label for="sunburn">Обгорел на пляже</label>
+            </div>
+            <div class="form__checkbox">
+              <input type="checkbox" name="feature" id="star" value="Видел Чака Норриса">
+              <label for="star">Видел Чака Норриса</label>
+            </div>
+            <div class="form__checkbox">
+              <input type="checkbox" name="feature" id="shopping" value="Накупил сувениров">
+              <label for="shopping">Накупил сувениров</label>
+            </div>
+            <div class="form__checkbox">
+              <input type="checkbox" name="feature" id="tower" value="Удержал башню">
+              <label for="tower">Удержал башню</label>
+            </div>
+            <div class="form__checkbox">
+              <input type="checkbox" name="feature" id="hotel" value="Разгромил отель">
+              <label for="hotel">Разгромил отель</label>
+            </div>
           </div>
         </fieldset>
-        <fieldset>
-          <legend>
-            С каким приложнием путешествовали?
-          </legend>
-          <div class="form__radio">
-            <input type="radio" name="OS" id="ios" value="ios">Pink для iOS
-          </div>
-          <div class="form__radio">
-            <input type="radio" name="OS" id="android" value="android">Pink на Android
-          </div>
-          <div class="form__radio">
-            <input type="radio" name="OS" id="winphone" value="win">Windows Phone
+        <fieldset class="form__fieldset">
+          <div class="form__fieldset-wrapper">
+            <div class="form__text-field">
+              <label for="phone">Номер телефона</label>
+              <input type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
+            </div>
+            <div class="form__text-field">
+              <label for="firstName">Адрес почты</label>
+              <input type="email" id="email" name="email" placeholder="Введите почту *">
+            </div>
           </div>
         </fieldset>
-        <fieldset>
-          <legend>
-            Опишите свои эмоции
-          </legend>
-          <textarea name="emotions" id="" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        <fieldset class="form__fieldset">
+          <div class="form__fieldset-wrapper">
+            <legend>
+              С каким приложнием путешествовали?
+            </legend>
+            <label class="form__radio">
+              <input type="radio" name="OS" id="ios" value="ios">Pink для iOS
+            </label>
+            <label class="form__radio">
+              <input type="radio" name="OS" id="android" value="android">Pink на Android
+            </label>
+            <label class="form__radio">
+              <input type="radio" name="OS" id="winphone" value="win">Windows Phone
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <div class="form__fieldset-wrapper">
+            <legend>
+              Опишите свои эмоции
+            </legend>
+            <textarea name="emotions" id="" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </div>
         </fieldset>
         <input type="submit" value="Отправить форму">
-        <small class="ащкь__legend">
-            <sup>*</sup> — Обязательные поля
-          </small>
+        <small class="form__legend">
+          <sup>*</sup> — Обязательные поля
+        </small>
       </form>
     </section>
   </main>

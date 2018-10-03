@@ -2,7 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -13,16 +16,16 @@
         <button class="main-nav__toggle">Close menu</button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="">Главная</a>
+            <a href="index.html" class="main-nav__link">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="">Фотографии</a>
+            <a href="photo.html" class="main-nav__link">Фотографии</a>
           </li>
           <li class="main-nav__item">
-            <a href="">Конкурс</a>
+            <a href="form.html" class="main-nav__link">Конкурс</a>
           </li>
           <li class="main-nav__item">
-            <a href="">HTML Academy</a>
+            <a href="htmlacademy.ru" class="main-nav__link">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -33,21 +36,27 @@
         <div class="promo">
           <img src="http://placehold.it/320x397" alt="promo-image" class="promo__img">
         </div>
-        <button class="button download__button"> Скачать приложение</button>
+        <a class="button download__button"> Скачать приложение</a>
         <div class="download__links links">
           <ul class="links__list">
             <li class="links__item">
-              <a href="#" class="links__link links__link--ios"></a>
+              <a href="#" class="links__link links__link--ios">
+                <img src="" alt="iOs">
+              </a>
             </li>
             <li class="links__item">
-              <a href="#" class="links__link links__link--android"></a>
+              <a href="#" class="links__link links__link--android">
+                <img src="" alt="android">
+              </a>
             </li>
             <li class="links__item">
-              <a href="#" class="links__link links__link--windows"></a>
+              <a href="#" class="links__link links__link--windows">
+                <img src="" alt="windows">
+              </a>
             </li>
           </ul>
         </div>
-        <p class="download__text">iPhone. iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <p class="download__text">Доступно для iPhone. iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Наши преимущества</h2>
@@ -84,29 +93,41 @@
       <section class="reviews">
         <div class="reviews__wrapper slider">
           <h2 class="visually-hidden">Отзывы о нас</h2>
-          <div class="reviews__list slider__list">
-            <blockquote class="reviews__item slider__item">
-              <cite class="reviews__author-name">Николай петров</cite>
-              <p class="reviews__text">
-                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
-                познакомился со своей
-                будущей женой в комментариях к выложенной фотографии!»
-              </p>
-            </blockquote>
-            <blockquote class="reviews__item slider__item">
-              <cite class="reviews__author-name"></cite>
-              <p class="reviews__text"></p>
-            </blockquote>
-            <blockquote class="reviews__item slider__item">
-              <cite class="reviews__author-name"></cite>
-              <p class="reviews__text"></p>
-            </blockquote>
-          </div>
-          <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
+          <ul class="reviews__list slider__list">
+            <li>
+              <blockquote class="reviews__item slider__item">
+                <cite class="reviews__author-name">Николай петров</cite>
+                <p class="reviews__text">
+                  «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
+                  познакомился со своей
+                  будущей женой в комментариях к выложенной фотографии!»
+                </p>
+              </blockquote>
+            </li>
+            <li>
+              <blockquote class="reviews__item slider__item">
+                <cite class="reviews__author-name"></cite>
+                <p class="reviews__text"></p>
+              </blockquote>
+            </li>
+            <li>
+              <blockquote class="reviews__item slider__item">
+                <cite class="reviews__author-name"></cite>
+                <p class="reviews__text"></p>
+              </blockquote>
+            </li>
+          </ul>
+          <ul class="reviews__toggles slider__toggles toggles">
+            <li>
+              <button class="toggles__item" type="button">1</button>
+            </li>
+            <li>
+              <button class="toggles__item" type="button">2</button>
+            </li>
+            <li>
+              <button class="toggles__item" type="button">3</button>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="price">
@@ -119,10 +140,10 @@
                 <span class="price__number">1,99 USD</span>
               </div>
               <ul class="price__features">
-                  <li class="price__feature">Розовый фильтр</li>
-                  <li class="price__feature">Смайлики</li>
-                  <li class="price__feature">Комментарии</li>
-                </ul>
+                <li class="price__feature">Розовый фильтр <span>да</span></li>
+                <li class="price__feature">Смайлики <span>нет</span> </li>
+                <li class="price__feature">Комментарии <span>нет</span> </li>
+              </ul>
             </li>
             <li class="price__item slider__item">
               <div class="price__header">
@@ -130,11 +151,11 @@
                 <span class="price__number">3,99 USD</span>
               </div>
               <ul class="price__features">
-                <li class="price__feature">Розовый фильтр</li>
-                <li class="price__feature">Смайлики</li>
-                <li class="price__feature">Комментарии</li>
+                <li class="price__feature">Розовый фильтр <span>да</span></li>
+                <li class="price__feature">Смайлики <span>да</span> </li>
+                <li class="price__feature">Комментарии <span>нет</span> </li>
               </ul>
-              <div class="price--featured">Хит</div>
+              <div class="price__mark">Хит</div>
             </li>
             <li class="price__item slider__item">
               <div class="price__header">
@@ -142,23 +163,23 @@
                 <span class="price__number">9,99 USD</span>
               </div>
               <ul class="price__features">
-                  <li class="price__feature">Розовый фильтр</li>
-                  <li class="price__feature">Смайлики</li>
-                  <li class="price__feature">Комментарии</li>
-                </ul>
+                <li class="price__feature">Розовый фильтр <span>да</span></li>
+                <li class="price__feature">Смайлики <span>да</span> </li>
+                <li class="price__feature">Комментарии <span>да</span> </li>
+              </ul>
             </li>
           </ul>
-          <ul class="price__toggles slider__toggles">
-            <li>
-              <button class="slider__toggle" type="button">1</button>
-            </li>
-            <li>
-              <button class="slider__toggle" type="button">2</button>
-            </li>
-            <li>
-              <button class="slider__toggle" type="button">3</button>
-            </li>
-          </ul>
+          <ul class="reviews__toggles slider__toggles toggles">
+              <li>
+                <button class="toggles__item" type="button">1</button>
+              </li>
+              <li>
+                <button class="toggles__item" type="button">2</button>
+              </li>
+              <li>
+                <button class="toggles__item" type="button">3</button>
+              </li>
+            </ul>
         </div>
       </section>
       <footer class="page-footer">
