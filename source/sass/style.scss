@@ -1,1 +1,42 @@
+// Helpers
+
+@import "helpers/visually-hidden.scss";
+@import "helpers/normalize.scss";
+@import "helpers/variables.scss";
+
+// Main page styles
+
+@import "main-page/advantages.scss";
+@import "main-page/button.scss";
+@import "main-page/contacts.scss";
+@import "main-page/download.scss";
+@import "main-page/links.scss";
+@import "main-page/main-nav.scss";
+@import "main-page/page-footer.scss";
+@import "main-page/page-header.scss";
+@import "main-page/page-main.scss";
+@import "main-page/price.scss";
+@import "main-page/promo.scss";
+@import "main-page/reviews.scss";
+@import "main-page/slider.scss";
+@import "main-page/toggles.scss";
+
+
+// Photo page styles
+
+@import "photo-page/copyright.scss";
+@import "photo-page/photo-footer.scss";
+@import "photo-page/photo-gallery.scss";
+@import "photo-page/photo-main.scss";
+@import "photo-page/photo-post.scss";
+@import "photo-page/post-creator.scss";
+@import "photo-page/post-form.scss";
+@import "photo-page/social.scss";
+
+// Form page styles
+
+@import "form-page/form-main.scss";
+@import "form-page/form-wrapper.scss";
+@import "form-page/form.scss";
+
 
