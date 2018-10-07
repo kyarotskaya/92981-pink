@@ -1,0 +1,9 @@
+.contacts__wrapper {
+  @include list-reset;
+}
+
+.contacts__text {
+  color: $pink;
+  font-size: 24px;
+  font-weight: 300;
+}

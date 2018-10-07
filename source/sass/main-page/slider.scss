@@ -1,0 +1,10 @@
+.slider__list {
+  @include list-reset;
+}
+
+.slider__toggles {
+  @include list-reset;
+
+  display: flex;
+  justify-content: center;
+}
