@@ -18,3 +18,14 @@
 .reviews__text {
   line-height: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .reviews__item {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .reviews__author-name {
+    font-size: 20px;
+  }
+}

@@ -17,3 +17,21 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+
+@media (min-width: $desktop-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    width: 625px
+  }
+
+  .main-nav__link {
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: capitalize;
+  }
+}

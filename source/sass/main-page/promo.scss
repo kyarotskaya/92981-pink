@@ -1,3 +1,10 @@
 .promo {
   background-image: url("../../img/bg-back-mobile@1x.jpg");
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    background-image: none;
+  }
 }

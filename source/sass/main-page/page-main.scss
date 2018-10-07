@@ -1,0 +1,17 @@
+.page-main__header {
+  @include visually-hidden;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__header {
+    color: $white;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: normal;
+    padding: 0 20px;
+    position: static;
+    text-align: center;
+    width: 340px;
+  }
+
+}

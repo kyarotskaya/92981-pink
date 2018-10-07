@@ -7,6 +7,11 @@
   padding: 0 20px;
 }
 
+.advantages__image--tablet,
+.advantages__image--desktop {
+  display: none;
+}
+
 .advantages__text {
   font-size: 24px;
   font-weight: 300;
@@ -21,4 +26,28 @@
 
 .advantages__list {
   @include list-reset;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__image--mobile,
+  .advantages__image--desktop {
+    display: none;
+  }
+
+  .advantages__image--tablet {
+    display: inline;
+  }
+
+  .advantages__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .advantages__list {
+    width: 310px;
+  }
+
+  .advantages__picture {
+    order: -1;
+  }
 }

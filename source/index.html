@@ -11,31 +11,34 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle">
-        <img src="img/icon-menu-cross.svg" alt="Close menu">
-      </button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a href="index.html" class="main-nav__link">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="photo.html" class="main-nav__link">Фотографии</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="form.html" class="main-nav__link">Конкурс</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="htmlacademy.ru" class="main-nav__link">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="page-header__wrapper">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle">
+          <img src="img/icon-menu-cross.svg" alt="Close menu">
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html" class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="photo.html" class="main-nav__link">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html" class="main-nav__link">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="htmlacademy.ru" class="main-nav__link">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="page-main">
-    <h1 class="visually-hidden">PINK - разукрась свои будни!</h1>
+    <h1 class="page-main__header">
+      Взгляните на жизнь иначе!</h1>
     <section class="download">
       <div class="promo">
         <img src="img/iphone-hand-mobile@1x.png" alt="promo-image" class="promo__img">
@@ -93,10 +96,13 @@
             </p>
           </li>
         </ul>
+        <div class="advantages__picture">
+            <img class="advantages__image advantages__image--mobile" src="img/iphone-screen-mobile@1x.png " alt="advantages__image">
+            <img class="advantages__image advantages__image--tablet" src="img/iphone-screen-3-tablet@1x.png " alt="advantages__image">
+            <img class="advantages__image advantages__image--desktop" src="img/iphone-screen-3-desktop@1x.png " alt="advantages__image">
+          </div>
       </div>
-      <p class="advantages__picture">
-        <img class="advantages__image" src="img/iphone-screen-mobile@1x.png " alt="advantages__image">
-      </p>
+
     </section>
     <section class="reviews">
       <div class="reviews__wrapper slider">
@@ -104,7 +110,8 @@
         <ul class="reviews__list slider__list">
           <li>
             <blockquote class="reviews__item slider__item">
-              <cite class="reviews__author-name">Николай петров</cite>
+              <small class="reviews__author-information">25 лет, водитель трамвая</small>
+              <cite class="reviews__author-name">Николай Петров</cite>
               <p class="reviews__text">
                 «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
                 познакомился со своей
@@ -191,7 +198,7 @@
       </div>
     </section>
     <footer class="page-footer">
-      <h2 class="page-footer__title">Остались вопросы? Свяжитесь с нами!</h2>
+      <h2 class="page-footer__title">Остались вопросы? <br> Свяжитесь с нами!</h2>
       <div class="page-footer__contacts contacts">
         <ul class="contacts__wrapper">
           <li class="contacts__item">
@@ -209,8 +216,40 @@
         </ul>
       </div>
       <div class="page-footer__map">
-        <img src="img/bg-map-mobile@1x.png" alt="map">
+        <img src="img/bg-map-mobile@1x.png" alt="map" class="page-footer__img page-footer__img--mobile">
+        <img src="img/bg-map-tablet@1x.jpg" alt="map" class="page-footer__img page-footer__img--tablet">
+        <img src="img/bg-map-desktop@1x.jpg" alt="map" class="page-footer__img page-footer__img--desktop">
       </div>
+      <div class="photo-footer__wrapper">
+          <a href="" class="photo-footer__logo">
+            <img src="img/logo-pink-blue-mobile.svg" alt="logo image" class="photo-footer__logo-image">
+          </a>
+          <div class="photo-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--twitter" href="#">
+                  <img src="img/icon-twitter.svg" alt="">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="#">
+                  <img src="img/icon-facebook.svg" alt="">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube" href="#">
+                  <img src="img/icon-youtube.svg" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="photo-footer__copyright copyright">
+            <b class="copyright__text">Разработано:</b>
+            <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <img src="img/logo-htmlacademy.svg" alt="html academy">
+            </a>
+          </div>
+        </div>
     </footer>
   </main>
 </body>

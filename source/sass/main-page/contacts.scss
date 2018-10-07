@@ -6,4 +6,21 @@
   color: $pink;
   font-size: 24px;
   font-weight: 300;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 620px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__wrapper {
+    width: 960px;
+  }
 }
