@@ -1,10 +1,11 @@
 // Helpers
 
-@import "helpers/visually-hidden.scss";
 @import "helpers/normalize.scss";
-@import "helpers/variables.scss";
-@import "helpers/body.scss";
 @import "helpers/mixins.scss";
+@import "helpers/variables.scss";
+@import "helpers/visually-hidden.scss";
+@import "helpers/body.scss";
+
 
 // Main page styles
 
@@ -28,7 +29,7 @@
 @import "photo-page/copyright.scss";
 @import "photo-page/photo-footer.scss";
 @import "photo-page/photo-gallery.scss";
-@import "photo-page/photo-main.scss";
+// @import "photo-page/photo-main.scss";
 @import "photo-page/photo-post.scss";
 @import "photo-page/post-creator.scss";
 @import "photo-page/post-form.scss";
