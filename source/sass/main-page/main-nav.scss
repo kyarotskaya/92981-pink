@@ -1,12 +1,12 @@
-.main-nav__list{
+.main-nav__list {
   @include list-reset;
   text-align: center;
 }
 
 .main-nav__toggle {
-background-color: transparent;
-border: none;
-outline: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 
 .main-nav__link {
