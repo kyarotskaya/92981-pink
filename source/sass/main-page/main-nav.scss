@@ -1,0 +1,19 @@
+.main-nav__list{
+  @include list-reset;
+  text-align: center;
+}
+
+.main-nav__toggle {
+background-color: transparent;
+border: none;
+outline: none;
+}
+
+.main-nav__link {
+  color: $white;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+}

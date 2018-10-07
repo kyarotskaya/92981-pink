@@ -1,3 +1,13 @@
 .photo-post{
   background-color: $grey;
 }
+
+.photo-post__time {
+  font-weight: 300;
+}
+
+.photo-post__like-num{
+  color: $pink;
+  font-size: 12px;
+  text-transform: uppercase;
+}

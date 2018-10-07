@@ -13,7 +13,9 @@
         <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle">Close menu</button>
+        <button class="main-nav__toggle">
+          <img src="img/icon-menu-cross.svg" alt="Close menu">
+        </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a href="index.html" class="main-nav__link">Главная</a>
@@ -36,33 +38,37 @@
         <div class="promo">
           <img src="img/iphone-hand-mobile@1x.png" alt="promo-image" class="promo__img">
         </div>
-        <a class="button download__button"> Скачать приложение</a>
-        <div class="download__links links">
-          <ul class="links__list">
-            <li class="links__item">
-              <a href="#" class="links__link links__link--ios">
-                <img src="img/logo-apple.svg" alt="iOs">
-              </a>
-            </li>
-            <li class="links__item">
-              <a href="#" class="links__link links__link--android">
-                <img src="img/logo-android.svg" alt="android">
-              </a>
-            </li>
-            <li class="links__item">
-              <a href="#" class="links__link links__link--windows">
-                <img src="img/logo-microsoft.svg" alt="windows">
-              </a>
-            </li>
-          </ul>
+        <div class="download__wrapper">
+          <a href="https://www.apple.com/itunes/" class="button download__button"> Скачать приложение</a>
+          <div class="download__links links">
+            <ul class="links__list">
+              <li class="links__item">
+                <a href="https://www.apple.com/itunes/" class="links__link links__link--ios">
+                  <img src="img/logo-apple.svg" alt="iOs">
+                </a>
+              </li>
+              <li class="links__item">
+                <a href="https://play.google.com/" class="links__link links__link--android">
+                  <img src="img/logo-android.svg" alt="android">
+                </a>
+              </li>
+              <li class="links__item">
+                <a href="https://www.microsoft.com/ru-ru/store/" class="links__link links__link--windows">
+                  <img src="img/logo-microsoft.svg" alt="windows">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <p class="download__text">Доступно для iPhone. iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
-        <p class="download__text">Доступно для iPhone. iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <div class="advantages__proposal">
-          <p class="advantages__text">Устали от серости мегаполиса?</p>
-          <p class="advantages__text">Нам есть что вам предложить!</p>
+          <p class="advantages__text">
+            Устали от серости мегаполиса? <br>
+            Нам есть что вам предложить!
+          </p>
         </div>
         <div class="advantages__wrapper">
           <ul class="advantages__list">
@@ -183,9 +189,7 @@
         </div>
       </section>
       <footer class="page-footer">
-        <div class="page-footer__text">
-          <h2>Остались вопросы? Свяжитесь с нами!</h2>
-        </div>
+          <h2 class="page-footer__title">Остались вопросы? Свяжитесь с нами!</h2>
         <div class="page-footer__contacts contacts">
           <ul class="contacts__wrapper">
             <li class="contacts__item">

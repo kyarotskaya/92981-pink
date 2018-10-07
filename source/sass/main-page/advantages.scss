@@ -1,3 +1,24 @@
-.advantages__wrapper{
+.advantages{
+  text-align: center;
+}
+
+.advantages__wrapper {
   background-color: $grey;
+  padding: 0 20px;
+}
+
+.advantages__text {
+  font-size: 24px;
+  font-weight: 300;
+  padding: 0 20px;
+}
+
+.advantages__title {
+  color: $black;
+  font-size: 18px;
+  line-height: 10px;
+}
+
+.advantages__list{
+  @include list-reset;
 }
