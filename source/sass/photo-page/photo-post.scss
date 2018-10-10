@@ -1,5 +1,7 @@
 .photo-post {
   background-color: $grey;
+  display: flex;
+  flex-direction: column;
 }
 
 .photo-post__time {
@@ -10,4 +12,20 @@
   color: $pink;
   font-size: 12px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-post__text {
+    max-width: 240px;
+  }
+
+  .photo-post__text--featured {
+    max-width: 100%;
+    order: 4;
+  }
+
+  .photo-gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

@@ -2,3 +2,17 @@
   padding: 40px 20px;
   text-align: center;
 }
+
+.photo-footer__wrapper--main {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-footer__wrapper--main,
+  .photo-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 950px;
+    margin: 0 auto;
+  }
+}

@@ -1,3 +1,17 @@
 .post-creator {
   background-color: $grey;
 }
+
+.post-creator__wrapper {
+  padding: 0 20px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .post-creator__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 950px;
+    margin: 0 auto;
+  }
+}

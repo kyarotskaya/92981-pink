@@ -47,14 +47,20 @@
             <div class="photo-post__image">
               <img src="img/panorama-mobile@1x.jpg" alt="photo post image">
             </div>
-            <b class="photo-post__name">Анна</b>
-            <time class="photo-post__time">(5 минут назад)</time>
-            <p class="photo-post__text ">
+            <div class="photo-post__author">
+                <b class="photo-post__name">Анна</b>
+                <time class="photo-post__time">(5 минут назад)</time>
+            </div>
+
+            <p class="photo-post__text photo-post__text--featured">
               Прыгать или нет? Напишите в коментарии свой совет
               и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
             </p>
-            <span class="photo-post__like"></span>
-            <span class="photo-post__like-num">Нравится: 215</span>
+            <div class="photo-post__rate">
+                <span class="photo-post__like"></span>
+                <span class="photo-post__like-num">Нравится: 215</span>
+            </div>
+
           </li>
           <li class="photo-gallery__item photo-post">
             <div class="photo-post__image">
@@ -130,28 +136,28 @@
       </p>
     </section>
     <section class="post-creator">
-      <form action="https://echo.htmlacademy.ru" class="post-creator__form post-form" method="POST" target="_blank"
-        enctype="application/x-www-form-urlencoded">
-        <!-- <input type="text" class="post-form__picture"> -->
+      <div class="post-creator__wrapper">
         <img src="img/photo-road-mobile@1x.jpg" alt="post creator image" class="post-creator__image">
-
-        <fieldset class="post-form__tools">
-          <div class="post-form__tools-wrapper">
-            <label>
-              <input type="radio" name="tool" class="post-form__tool-button post-form__tool-button--active">crop
-            </label>
-            <label>
-              <input type="radio" name="tool" class="post-form__tool-button">fill
-            </label>
-            <label>
-              <input type="radio" name="tool" class="post-form__tool-button">contrast
-            </label>
-          </div>
-          <div class="post-form__tool-details"></div>
-        </fieldset>
-        <button class="post-form__button button post-form__button--active">Запостить</button>
-        <button class="post-form__button button post-form__button--disable">Отмена</button>
-      </form>
+        <form action="https://echo.htmlacademy.ru" class="post-creator__form post-form" method="POST" target="_blank"
+          enctype="application/x-www-form-urlencoded">
+          <fieldset class="post-form__tools">
+            <div class="post-form__tools-wrapper">
+              <label>
+                <input type="radio" name="tool" class="post-form__tool-button post-form__tool-button--active">crop
+              </label>
+              <label>
+                <input type="radio" name="tool" class="post-form__tool-button">fill
+              </label>
+              <label>
+                <input type="radio" name="tool" class="post-form__tool-button">contrast
+              </label>
+            </div>
+            <div class="post-form__tool-details"></div>
+          </fieldset>
+          <button class="post-form__button button post-form__button--active">Запостить</button>
+          <button class="post-form__button button post-form__button--disable">Отмена</button>
+        </form>
+      </div>
     </section>
   </main>
   <footer class="photo-footer">

@@ -1,0 +1,29 @@
+.timer {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .timer {
+    display: block;
+  }
+
+  .timer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .timer__image {
+    path {
+      fill: #dedede;
+    }
+  }
+
+  .timer__text {
+    width: 320px;
+  }
+
+  .timer__link {
+    color: $pink;
+  }
+}

@@ -22,6 +22,7 @@
 @import "main-page/promo.scss";
 @import "main-page/reviews.scss";
 @import "main-page/slider.scss";
+@import "main-page/timer.scss";
 // @import "main-page/toggles.scss";
 
 // Photo page styles
@@ -29,10 +30,10 @@
 @import "photo-page/copyright.scss";
 @import "photo-page/photo-footer.scss";
 @import "photo-page/photo-gallery.scss";
-// @import "photo-page/photo-main.scss";
+@import "photo-page/photo-main.scss";
 @import "photo-page/photo-post.scss";
 @import "photo-page/post-creator.scss";
-@import "photo-page/post-form.scss";
+// @import "photo-page/post-form.scss";
 @import "photo-page/social.scss";
 
 // Form page styles

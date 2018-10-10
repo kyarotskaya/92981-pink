@@ -104,6 +104,23 @@
       </div>
 
     </section>
+    <section class="timer">
+      <div class="timer__wrapper">
+        <svg class="timer__image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="240px" height="280px" viewBox="0 0 298 345.097" enable-background="new 0 0 298 345.097" xml:space="preserve">
+          <path d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z"/>
+        </svg>
+        <div class="timer__info">
+          <h2 class="timer-header">Эффект на 24 часа!</h2>
+          <p class="timer__text">
+            Британские ученые провели исследования
+            и доказали, что положительный эффект
+            от использования приложения длится
+            целые сутки!
+          </p>
+          <a href="#" class="timer__link">Узнать больше об исследовании</a>
+        </div>
+      </div>
+    </section>
     <section class="reviews">
       <div class="reviews__wrapper slider">
         <h2 class="visually-hidden">Отзывы о нас</h2>
@@ -150,38 +167,83 @@
       <div class="price__wrapper slider">
         <ul class="price__list slider__list">
           <li class="price__item slider__item">
-            <div class="price__header">
-              <h3 class="price__title">База</h3>
-              <span class="price__number">1,99 USD</span>
-            </div>
-            <ul class="price__features price-features">
-                <li class="price-feature__item">Розовый фильтр <span>да</span></li>
-                <li class="price-feature__item">Смайлики <span>нет</span> </li>
-                <li class="price-feature__item">Комментарии <span>нет</span> </li>
-              </ul>
+              <table class="price__item-table" cellpadding="24" cellspacing='0'>
+                  <thead class="price__header">
+                    <tr>
+                      <th colspan="2">
+                        <h3 class="price__title">База</h3>
+                        <span class="price__number">1,99 USD</span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody class="price__features price-features">
+                    <tr class="price-feature__item">
+                      <td >Розовый фильтр</td>
+                      <td>да</td>
+                    </tr>
+                    <tr class="price-feature__item">
+                      <td>Смайлики</td>
+                      <td>нет</td>
+                    </tr>
+                    <tr class="price-feature__item">
+                      <td>Комментарии</td>
+                      <td>нет</td>
+                    </tr>
+                  </tbody>
+                </table>
           </li>
           <li class="price__item slider__item">
-            <div class="price__header">
-              <h3 class="price__title">Стандарт</h3>
-              <span class="price__number">3,99 USD</span>
-            </div>
-            <ul class="price__features price-features">
-                <li class="price-feature__item">Розовый фильтр <span>да</span></li>
-                <li class="price-feature__item">Смайлики <span>да</span> </li>
-                <li class="price-feature__item">Комментарии <span>нет</span> </li>
-              </ul>
+              <table class="price__item-table" cellpadding="24" cellspacing='0'>
+                <thead class="price__header">
+                  <tr>
+                    <th colspan="2">
+                      <h3 class="price__title">Стандарт</h3>
+                      <span class="price__number">3,99 USD</span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="price__features price-features">
+                  <tr class="price-feature__item">
+                    <td >Розовый фильтр</td>
+                    <td>да</td>
+                  </tr>
+                  <tr class="price-feature__item">
+                    <td>Смайлики</td>
+                    <td>да</td>
+                  </tr>
+                  <tr class="price-feature__item">
+                    <td>Комментарии</td>
+                    <td>нет</td>
+                  </tr>
+                </tbody>
+              </table>
             <div class="price__mark">Хит</div>
           </li>
           <li class="price__item slider__item">
-            <div class="price__header">
-              <h3 class="price__title">Анлим</h3>
-              <span class="price__number">9,99 USD</span>
-            </div>
-            <ul class="price__features price-features">
-              <li class="price-feature__item">Розовый фильтр <span>да</span></li>
-              <li class="price-feature__item">Смайлики <span>да</span> </li>
-              <li class="price-feature__item">Комментарии <span>да</span> </li>
-            </ul>
+              <table class="price__item-table" cellpadding="24" cellspacing='0'>
+                  <thead class="price__header">
+                    <tr>
+                      <th colspan="2">
+                        <h3 class="price__title">Анлим</h3>
+                        <span class="price__number">9,99 USD</span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody class="price__features price-features">
+                    <tr class="price-feature__item">
+                      <td >Розовый фильтр</td>
+                      <td>да</td>
+                    </tr>
+                    <tr class="price-feature__item">
+                      <td>Смайлики</td>
+                      <td>да</td>
+                    </tr>
+                    <tr class="price-feature__item">
+                      <td>Комментарии</td>
+                      <td>да</td>
+                    </tr>
+                  </tbody>
+                </table>
           </li>
         </ul>
         <ul class="price__toggles slider__toggles toggles">
@@ -220,7 +282,7 @@
         <img src="img/bg-map-tablet@1x.jpg" alt="map" class="page-footer__img page-footer__img--tablet">
         <img src="img/bg-map-desktop@1x.jpg" alt="map" class="page-footer__img page-footer__img--desktop">
       </div>
-      <div class="photo-footer__wrapper">
+      <div class="photo-footer__wrapper photo-footer__wrapper--main">
           <a href="" class="photo-footer__logo">
             <img src="img/logo-pink-blue-mobile.svg" alt="logo image" class="photo-footer__logo-image">
           </a>
