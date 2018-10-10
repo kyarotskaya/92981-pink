@@ -19,7 +19,7 @@
 
 @media (min-width: $tablet-width) {
   .download {
-    background-image: url(../../img/bg-back-tablet@1x.jpg);
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
     background-size: cover;
     display: flex;
   }
@@ -37,6 +37,6 @@
 
 @media (min-width: $desktop-width) {
   .download {
-    background-image: url(../../img/bg-back-desktop@1x.jpg);
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
   }
 }
