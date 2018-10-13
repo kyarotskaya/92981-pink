@@ -1,12 +1,26 @@
+.main-nav {
+  position: relative;
+}
+
 .main-nav__list {
   @include list-reset;
   text-align: center;
 }
 
 .main-nav__toggle {
+  position: absolute;
+  top: -50px;
+  right: 20px;
+  z-index: 2;
   background-color: transparent;
   border: none;
   outline: none;
+  padding: 0;
+}
+
+.main-nav__item {
+  box-shadow: 0px 1px 0px 0px rgba(0,0,0,1);
+  padding: 16px 0;
 }
 
 .main-nav__link {

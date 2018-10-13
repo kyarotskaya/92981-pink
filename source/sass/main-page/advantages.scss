@@ -15,7 +15,10 @@
 .advantages__text {
   font-size: 24px;
   font-weight: 300;
-  padding: 0 20px;
+  margin: 0 auto;
+  padding: 47px 0 70px;
+  line-height: normal;
+  width: 320px;
 }
 
 .advantages__title {
@@ -26,6 +29,13 @@
 
 .advantages__list {
   @include list-reset;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 55px;
+}
+
+.advantages__item {
+  margin-bottom: 45px;
 }
 
 @media (min-width: $tablet-width) {

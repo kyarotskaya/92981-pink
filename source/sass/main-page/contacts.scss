@@ -1,5 +1,7 @@
 .contacts__wrapper {
   @include list-reset;
+  margin: 0 auto;
+  width: 280px;
 }
 
 .contacts__text {
@@ -7,6 +9,10 @@
   font-size: 24px;
   font-weight: 300;
   margin: 0;
+}
+
+.contacts__item {
+  margin-bottom: 30px;
 }
 
 @media (min-width: $tablet-width) {
