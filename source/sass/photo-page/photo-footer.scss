@@ -17,8 +17,7 @@
   .photo-footer__wrapper--main,
   .photo-footer__wrapper {
     display: flex;
-    justify-content: space-between;
-    max-width: 620px;
+    flex-direction: row;
     width: 620px;
   }
 
