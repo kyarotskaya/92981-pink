@@ -11,7 +11,9 @@
 }
 
 .form__fieldset-wrapper {
-  padding: 43px 20px;
+  padding: 43px 0;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .form__fieldset-legend {
@@ -38,18 +40,18 @@
 .form__submit {
   background-color: $green;
   border: none;
+  border-radius: 2px;
   color: $white;
-  display: block;
-  font-size: 18px;
-  font-weight: bold;
   line-height: 30px;
   margin: 0 auto;
   outline: none;
   text-transform: uppercase;
+  height: 64px;
 }
 
 .form__legend-wrapper {
-  padding: 0 20px;
+  width: 280px;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -62,4 +64,18 @@
 
 .form__legend-sup {
   color: $pink;
+}
+
+@media (min-width: $tablet-width) {
+  .form__fieldset-wrapper,
+  .form__legend-wrapper {
+    width: 620px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__fieldset-wrapper,
+  .form__legend-wrapper {
+    width: 940px;
+  }
 }

@@ -1,5 +1,8 @@
 .form-main__title {
   background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
   color: $white;
   font-size: 24px;
   font-weight: 300;
@@ -11,4 +14,11 @@
 
 .form__fieldset--grey {
   background-color: $grey;
+}
+
+@media (min-width: $tablet-width) {
+  .form-main__title {
+    font-size: 50px;
+    line-height: normal;
+  }
 }

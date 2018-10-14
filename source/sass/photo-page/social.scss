@@ -5,17 +5,17 @@
   justify-content: center;
 }
 
+.social__item {
+  border: 3px solid $light-grey;
+  border-radius: 50%;
+  width: 51px;
+  height: 51px;
+  line-height: 51px;
+  text-align: center;
+}
+
 @media (min-width: $tablet-width) {
   .social__list {
     justify-content: space-between;
-  }
-
-  .social__item {
-    border: 3px solid $light-grey;
-    border-radius: 50%;
-    width: 51px;
-    height: 51px;
-    line-height: 51px;
-    text-align: center;
   }
 }

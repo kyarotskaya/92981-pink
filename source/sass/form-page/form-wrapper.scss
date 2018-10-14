@@ -1,6 +1,28 @@
 .form-wrapper__text {
   line-height: 30px;
   text-align: center;
-  margin: 0;
-  padding: 50px 20px;
+  margin: 0 auto;
+  padding: 50px 0;
+  width: 280px;
+}
+
+.form-wrapper__extra-text {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form-wrapper__text {
+    font-size: 18px;
+    width: 500px;
+  }
+
+  .form-wrapper__extra-text {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-wrapper__text {
+    width: 760px;
+  }
 }
