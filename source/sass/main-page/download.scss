@@ -30,6 +30,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .download__container {
+    display: flex;
+    width: 620px;
+    margin: 0 auto;
+  }
+
   .download {
     background-image: url("../../img/bg-back-tablet@1x.jpg");
     background-size: cover;
@@ -42,6 +48,14 @@
     width: 340px;
   }
 
+  .download__text {
+    font-size: 18px;
+  }
+
+  .download__button {
+    width: 300px;
+  }
+
   .promo {
     background-image: none;
   }
@@ -50,5 +64,9 @@
 @media (min-width: $desktop-width) {
   .download {
     background-image: url("../../img/bg-back-desktop@1x.jpg");
+  }
+
+  .download__container {
+    width: 940px;
   }
 }

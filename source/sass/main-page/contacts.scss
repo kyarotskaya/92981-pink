@@ -18,15 +18,25 @@
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     margin: 0 auto;
     width: 620px;
+  }
+
+  .contacts__item {
+    max-width: 238px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts__wrapper {
     width: 960px;
+  }
+
+  .contacts__item {
+    &:nth-child(2) {
+      order: 3;
+    }
   }
 }

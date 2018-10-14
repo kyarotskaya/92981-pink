@@ -8,9 +8,17 @@
     font-size: 30px;
     font-weight: 300;
     line-height: normal;
-    padding: 0 20px;
-    position: static;
+    left: 68px;
     text-align: center;
-    width: 340px;
+    width: 185px;
+    margin: 0;
+    height: auto;
+    clip: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__header {
+    left: 500px;
   }
 }

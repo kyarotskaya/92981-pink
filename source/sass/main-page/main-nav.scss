@@ -33,6 +33,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav__item {
+    border: none;
+  }
+
   .main-nav__toggle {
     display: none;
   }

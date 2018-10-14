@@ -12,7 +12,19 @@
   .photo-footer__wrapper {
     display: flex;
     justify-content: space-between;
-    max-width: 950px;
+    max-width: 620px;
     margin: 0 auto;
+    padding: 40px 0;
+  }
+
+  .photo-footer__social {
+    width: 180px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-footer__wrapper--main,
+  .photo-footer__wrapper {
+    max-width: 940px;
   }
 }

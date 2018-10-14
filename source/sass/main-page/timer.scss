@@ -10,7 +10,9 @@
   .timer__wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 0 20px;
+    width: 620px;
+    margin: 0 auto;
+    padding: 60px 0 90px;
   }
 
   .timer__image {
@@ -25,5 +27,11 @@
 
   .timer__link {
     color: $pink;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .timer__wrapper {
+    width: 940px;
   }
 }
