@@ -2,6 +2,13 @@
   background-color: $grey;
   display: flex;
   flex-direction: column;
+  padding-bottom: 25px;
+}
+
+.photo-post__author,
+.photo-post__text,
+.photo-post__rate {
+  padding-left: 18px;
 }
 
 .photo-post__time {
@@ -15,17 +22,26 @@
 }
 
 @media (min-width: $tablet-width) {
+  .photo-post {
+    &:nth-child(1) {
+      width: 100%;
+    }
+    padding-bottom: 30px;
+    min-width: 300px;
+  }
+
   .photo-post__text {
     max-width: 240px;
+  }
+
+  .photo-post__author,
+  .photo-post__text,
+  .photo-post__rate {
+    padding-left: 28px;
   }
 
   .photo-post__text--featured {
     max-width: 100%;
     order: 4;
-  }
-
-  .photo-gallery__list {
-    display: flex;
-    flex-wrap: wrap;
   }
 }

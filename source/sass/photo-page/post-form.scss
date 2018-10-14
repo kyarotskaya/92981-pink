@@ -1,0 +1,23 @@
+.post-form__tools {
+  border: none;
+}
+
+.post-form__button {
+  background-color: $grey;
+}
+
+.post-form__button--active {
+  border: 3px solid $pink;
+  color: $pink;
+}
+
+.post-form__button--disable {
+  border: 3px solid $medium-grey;
+  color: $lighter-grey;
+}
+
+@media (min-width: $desktop-width) {
+  .post-form__button {
+    width: 184px;
+  }
+}

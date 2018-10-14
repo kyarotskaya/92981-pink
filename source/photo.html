@@ -11,28 +11,30 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle">
-        <img src="img/icon-menu-cross.svg" alt="Close menu">
-      </button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a href="index.html" class="main-nav__link">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="photo.html" class="main-nav__link">Фотографии</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="form.html" class="main-nav__link">Конкурс</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="htmlacademy.ru" class="main-nav__link">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="page-header__wrapper">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle">
+          <img src="img/icon-menu-cross.svg" alt="Close menu">
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html" class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="photo.html" class="main-nav__link">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html" class="main-nav__link">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="htmlacademy.ru" class="main-nav__link">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="photo-main">
     <h1 class="photo-main__title">Фотографии пользователей</h1>
@@ -48,8 +50,8 @@
               <img src="img/panorama-mobile@1x.jpg" alt="photo post image">
             </div>
             <div class="photo-post__author">
-                <b class="photo-post__name">Анна</b>
-                <time class="photo-post__time">(5 минут назад)</time>
+              <b class="photo-post__name">Анна</b>
+              <time class="photo-post__time">(5 минут назад)</time>
             </div>
 
             <p class="photo-post__text photo-post__text--featured">
@@ -57,81 +59,106 @@
               и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
             </p>
             <div class="photo-post__rate">
-                <span class="photo-post__like"></span>
-                <span class="photo-post__like-num">Нравится: 215</span>
+              <span class="photo-post__like"></span>
+              <span class="photo-post__like-num">Нравится: 215</span>
             </div>
-
           </li>
           <li class="photo-gallery__item photo-post">
             <div class="photo-post__image">
               <img src="img/photo-car-mobile@1x.jpg" alt="photo post image">
             </div>
-            <b class="photo-post__name">Левон</b>
-            <time class="photo-post__time">(5 часов назад)</time>
+            <div class="photo-post__author">
+              <b class="photo-post__name">Левон</b>
+              <time class="photo-post__time">(5 часов назад)</time>
+            </div>
             <p class="photo-post__text">
               Вчера он на луну летал, сегодня в руки к нам попал
             </p>
-            <span class="photo-post__like"></span>
-            <span class="photo-post__like-num">Нравится: 356</span>
+            <div class="photo-post__rate">
+              <span class="photo-post__like"></span>
+              <span class="photo-post__like-num">Нравится: 356</span>
+            </div>
           </li>
           <li class="photo-gallery__item photo-post">
             <div class="photo-post__image">
               <img src="img/photo-drumset-mobile@1x.jpg" alt="photo post image">
             </div>
-            <b class="photo-post__name">Антон</b>
-            <time class="photo-post__time">(12 часов назад)</time>
+            <div class="photo-post__author">
+              <b class="photo-post__name">Антон</b>
+              <time class="photo-post__time">(12 часов назад)</time>
+            </div>
             <p class="photo-post__text">Соседи будут рады!</p>
-            <span class="photo-post__like"></span>
-            <span class="photo-post__like-num">Нравится: 666</span>
+            <div class="photo-post__rate">
+              <span class="photo-post__like"></span>
+              <span class="photo-post__like-num">Нравится: 666</span>
+            </div>
           </li>
           <li class="photo-gallery__item photo-post">
             <div class="photo-post__image">
               <img src="img/photo-window-mobile@1x.jpg" alt="photo post image">
             </div>
-            <b class="photo-post__name">Борис</b>
-            <time class="photo-post__time">(20 часов назад)</time>
+            <div class="photo-post__author">
+              <b class="photo-post__name">Борис</b>
+              <time class="photo-post__time">(20 часов назад)</time>
+            </div>
             <p class="photo-post__text">
               Здесь могла быть ваша цитата о высоком и вечном
             </p>
-            <span class="photo-post__like"></span>
-            <span class="photo-post__like-num">Нравится: 215</span>
+            <div class="photo-post__rate">
+              <span class="photo-post__like"></span>
+              <span class="photo-post__like-num">Нравится: 215</span>
+            </div>
           </li>
           <li class="photo-gallery__item photo-post">
             <div class="photo-post__image">
               <img src="img/photo-fair-mobile@1x.jpg" alt="photo post image">
             </div>
-            <b class="photo-post__name">Сергей</b>
-            <time class="photo-post__time">(25 часов назад)</time>
+            <div class="photo-post__author">
+              <b class="photo-post__name">Сергей</b>
+              <time class="photo-post__time">(25 часов назад)</time>
+            </div>
             <p class="photo-post__text">
               Самая кубанская в мире!
             </p>
-            <span class="photo-post__like"></span>
-            <span class="photo-post__like-num">Нравится: 4</span>
+            <div class="photo-post__rate">
+              <span class="photo-post__like"></span>
+              <span class="photo-post__like-num">Нравится: 4</span>
+            </div>
           </li>
           <li class="photo-gallery__item photo-post">
             <div class="photo-post__image">
               <img src="img/photo-pov-mobile@1x.jpg" alt="photo post image">
             </div>
-            <b class="photo-post__name">Максим</b>
-            <time class="photo-post__time">(40 часов назад)</time>
+            <div class="photo-post__author">
+              <b class="photo-post__name">Максим</b>
+              <time class="photo-post__time">(40 часов назад)</time>
+            </div>
             <p class="photo-post__text">Где снег-то?</p>
-            <span class="photo-post__like"></span>
-            <span class="photo-post__like-num">Нравится: 150</span>
+            <div class="photo-post__rate">
+              <span class="photo-post__like"></span>
+              <span class="photo-post__like-num">Нравится: 150</span>
+            </div>
           </li>
           <li class="photo-gallery__item photo-post">
             <div class="photo-post__image">
               <img src="img/photo-wing-mobile@1x.jpg" alt="photo post image">
             </div>
-            <b class="photo-post__name">Надежда</b>
-            <time class="photo-post__time">(45 часов назад)</time>
+            <div class="photo-post__author">
+              <b class="photo-post__name">Надежда</b>
+              <time class="photo-post__time">(45 часов назад)</time>
+            </div>
             <p class="photo-post__text">Всем GM и взаимные лайки!</p>
-            <span class="photo-post__like"></span>
-            <span class="photo-post__like-num">Нравится: 2560</span>
+            <div class="photo-post__rate">
+            </div>
+            <div class="photo-post__rate">
+              <span class="photo-post__like"></span>
+              <span class="photo-post__like-num">Нравится: 2560</span>
+            </div>
           </li>
         </ul>
       </div>
       <p class="photo-gallery__text photo-gallery__text--bottom">
-        Затмите их всех!
+        Затмите их всех! <br>
         Выкладывайте все, что накопилось в телефоне!
       </p>
     </section>

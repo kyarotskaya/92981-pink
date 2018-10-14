@@ -3,15 +3,27 @@
 }
 
 .post-creator__wrapper {
-  padding: 0 20px;
+  margin: 0 auto;
   text-align: center;
+  padding: 20px 0 40px;
+  width: 280px;
 }
 
 @media (min-width: $tablet-width) {
   .post-creator__wrapper {
     display: flex;
     justify-content: space-between;
-    max-width: 950px;
+    width: 620px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .post-creator {
     margin: 0 auto;
+    width: 940px;
+  }
+
+  .post-creator__wrapper {
+    width: 800px;
   }
 }
