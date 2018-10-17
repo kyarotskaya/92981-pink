@@ -56,6 +56,10 @@
   position: absolute;
 }
 
+.price__item-features {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .price__wrapper {
     padding: 40px 0 68px;
@@ -66,6 +70,7 @@
   }
 
   .price__item-features {
+    display: flex;
     align-self: flex-end;
   }
 
