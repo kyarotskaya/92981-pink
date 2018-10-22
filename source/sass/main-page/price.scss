@@ -2,19 +2,22 @@
   background-color: $grey;
 }
 
-.price__item {
-  text-align: center;
+.price__list {
+  width: 320px;
+  margin: 0 auto;
 }
 
 .price__header {
   background-color: $blue;
+  text-align: center;
 }
 
 .price__title {
   color: $white;
   font-size: 18px;
   font-weight: bold;
-  line-height: 30px;
+  line-height: 24px;
+  margin: 0;
   text-transform: uppercase;
 }
 
@@ -27,8 +30,88 @@
 }
 
 .price__features {
-  @include list-reset;
-
-  line-height: 30px;
+  line-height: 14px;
   text-transform: uppercase;
+}
+
+.price-feature__item {
+  td {
+    border-bottom: 2px solid $dark-grey;
+  }
+
+  &:nth-child(3) {
+    td {
+      border-bottom: none;
+    }
+  }
+}
+
+.price__item-table {
+  background-color: $white;
+  border: 2px solid $dark-grey;
+  width: 100%;
+}
+
+.price__mark {
+  position: absolute;
+}
+
+.price__item-features {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .price__wrapper {
+    padding: 40px 0 68px;
+  }
+
+  .price__item-table {
+    width: 155px;
+  }
+
+  .price__item-features {
+    display: flex;
+    align-self: flex-end;
+  }
+
+  .price__item-features-table {
+    background: $white;
+    border: 2px solid $dark-grey;
+    line-height: 14px;
+    width: 166px;
+  }
+
+  .price__row {
+    td {
+      border-bottom: 2px solid $dark-grey;
+    }
+
+    &:nth-child(3) {
+      td {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .price__list {
+    display: flex;
+    width: 620px;
+  }
+
+  .price-feature__item {
+    td:nth-child(1) {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price__list {
+    width: 940px;
+  }
+
+  .price__item-table,
+  .price__item-features-table {
+    width: 235px;
+  }
 }

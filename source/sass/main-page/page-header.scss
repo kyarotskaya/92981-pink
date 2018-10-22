@@ -1,4 +1,34 @@
 .page-header {
   background-color: $blue;
-  padding: 0 20px;
+}
+
+.page-header__logo {
+  border-bottom: 1px solid $black;
+  display: block;
+  padding: 21px 20px;
+}
+
+.page-header__wrapper {
+  margin: 0 auto;
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    width: 660px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin: 0 auto;
+    width: 940px;
+  }
+
+  .page-header__logo {
+    border: none;
+  }
 }

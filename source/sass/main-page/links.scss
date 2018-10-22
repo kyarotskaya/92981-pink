@@ -1,7 +1,9 @@
 .links__list {
   @include list-reset;
 
-  align-items: center;
+  align-items: baseline;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 280px;
 }

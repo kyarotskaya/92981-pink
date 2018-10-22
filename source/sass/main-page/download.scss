@@ -3,16 +3,70 @@
 }
 
 .download__wrapper {
-  padding: 0 20px;
+  margin: 0 auto;
+  padding: 25px 0 35px;
   text-align: center;
+  width: 280px;
 }
 
 .download__button {
+  border: 2px solid $white;
   color: $white;
   text-decoration: none;
+  margin: 0 auto;
+  line-height: 15px;
+  vertical-align: middle;
+  padding: 18px 0;
+}
+
+.download__links {
+  margin: 30px 0;
 }
 
 .download__text {
   color: $white;
   font-weight: 300;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .download__container {
+    display: flex;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .download {
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-size: cover;
+    display: flex;
+  }
+
+  .download__wrapper {
+    align-self: flex-end;
+    order: -1;
+    width: 340px;
+  }
+
+  .download__text {
+    font-size: 18px;
+  }
+
+  .download__button {
+    width: 300px;
+  }
+
+  .promo {
+    background-image: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download {
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
+  }
+
+  .download__container {
+    width: 940px;
+  }
 }

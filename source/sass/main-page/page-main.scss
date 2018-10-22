@@ -1,0 +1,24 @@
+.page-main__header {
+  @include visually-hidden;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__header {
+    color: $white;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: normal;
+    left: 68px;
+    text-align: center;
+    width: 185px;
+    margin: 0;
+    height: auto;
+    clip: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__header {
+    left: 500px;
+  }
+}

@@ -1,0 +1,37 @@
+.timer {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .timer {
+    display: block;
+  }
+
+  .timer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+    margin: 0 auto;
+    padding: 60px 0 90px;
+  }
+
+  .timer__image {
+    path {
+      fill: #dedede;
+    }
+  }
+
+  .timer__text {
+    width: 320px;
+  }
+
+  .timer__link {
+    color: $pink;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .timer__wrapper {
+    width: 940px;
+  }
+}

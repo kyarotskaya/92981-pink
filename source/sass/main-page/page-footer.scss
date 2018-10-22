@@ -5,4 +5,41 @@
 .page-footer__title {
   font-size: 24px;
   font-weight: 300;
+  line-height: normal;
+}
+
+.page-footer__img--tablet,
+.page-footer__img--desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__title {
+    font-size: 40px;
+    line-height: normal;
+  }
+
+  .page-footer__img--mobile,
+  .page-footer__img--desktop {
+    display: none;
+  }
+
+  .page-footer__img--tablet {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__title {
+    font-size: 50px;
+  }
+
+  .page-footer__img--mobile,
+  .page-footer__img--tablet {
+    display: none;
+  }
+
+  .page-footer__img--desktop {
+    display: inline;
+  }
 }
